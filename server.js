@@ -8,7 +8,7 @@ const app = express();
 const port = process.env.PORT || 8000;
 
 mongoose.connect(
-  "mongodb+srv://aghashahhyder:agha@cluster1.4vdslom.mongodb.net/test",
+  "mongodb+srv://Abdullahinam:abd@cluster1.4vdslom.mongodb.net/test",
   { useNewUrlParser: true }
 );
 const connection = mongoose.connection;

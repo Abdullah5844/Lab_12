@@ -7,10 +7,10 @@ const { config } = require("dotenv");
 describe("Test Add User", () => {
   test("should create a new post", () => {
     const res = request(app).post("http://localhost:8000/user/add").send({
-      Name: "Agha",
-      Email: "agha",
-      Age: "20",
-      Contact: "dha2",
+      Name: "Myhammad Abdullah",
+      Email: "i200867@nu.edu.pk",
+      Age: "21",
+      Contact: "GHQ",
     });
     expect(res.statusCode).toEqual(200);
     expect(res.body).toHaveProperty("post");
@@ -28,7 +28,7 @@ describe("Test the user added", () => {
   test("It should response the UserAdded method", () => {
     const response = request(app)
       .get("http://localhost:8000/user/:637c89e80dccb3a2139b5ff5")
-      .send({ Name: "Agha" });
-    expect(response.body.toEqual("Agha").statusCode).toBe(200);
+      .send({ Name: "Muhammad Abdullah" });
+    expect(response.body.toEqual("Muhammad Abdullah").statusCode).toBe(200);
   });
 });
